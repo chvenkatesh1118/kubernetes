@@ -3,7 +3,7 @@ module "minikube" {
 
   aws_region        = "us-east-1"
   cluster_name      = "minikube"
-  aws_instance_type = "t2.medium"
+  aws_instance_type = "t2.micro"
   ssh_public_key    = "~/.ssh/id_rsa.pub"
   aws_subnet_id     = module.vpc.public_subnets[0]
   //ami_image_id        = data.aws_ami.ami.id
