@@ -4,5 +4,5 @@ metadata:
   name: sample data
 spec:
   containers:
-  -name: ngnix
-  image: ngnix
+  - name: ngnix
+    image: ngnix
