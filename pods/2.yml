@@ -1,0 +1,8 @@
+appversion: v1
+kind: pod
+metadata:
+ name: sample2
+ spec:
+  containers:
+    - name: health
+    image: nginx
