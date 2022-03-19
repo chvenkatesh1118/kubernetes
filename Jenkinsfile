@@ -1,10 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('pull') {
             steps {
-                echo "Hello World!"
+                sh 'docker pull nginx'
             }
         }
+        stage('run') {
+                    steps {
+                        sh 'docker run -itd -p 81:80 nginx'
+                    }
+                }
     }
 }
