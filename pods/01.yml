@@ -8,3 +8,11 @@ spec:
     image: nginx
 
 ---
+apiversion: v1
+kind: pod
+metadata:
+  name: sample2
+spec:
+  containers:
+  - name: httpd
+   image: httpd
