@@ -1,5 +1,6 @@
-FROM centos:7
-RUN yum install epel-release -y
-RUN yum install nginx -y
+CentOS 7
+FROM centos: 7
+RUN yum -y install epel-release
+RUN yum -y update
+RUN yum -y install nginx
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
-
