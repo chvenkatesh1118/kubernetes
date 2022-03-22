@@ -1,7 +1,7 @@
 apiversion: v1
 kind: pod
 metadata:
-  name: sample data
+  name: nginxpod
 spec:
   containers:
   - name: nginx
@@ -11,7 +11,7 @@ spec:
 apiversion: v1
 kind: pod
 metadata:
-  name: sample2
+  name: httpdpod
 spec:
   containers:
   - name: httpd
