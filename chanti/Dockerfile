@@ -1,7 +1,8 @@
 
 FROM centos:7
 RUN yum -y install epel-release
-RUN yum -y update
+RUN apt-get -y install sudo
+
 RUN yum -y install nginx
 RUN curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 RUN  unzip /tmp/frontend.zip

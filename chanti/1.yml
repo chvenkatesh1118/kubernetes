@@ -1,0 +1,11 @@
+appversion: v1
+kind: pod
+    metadata:
+      name: chanti
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+      env:
+      - name: url
+        value:www.nginx.com
