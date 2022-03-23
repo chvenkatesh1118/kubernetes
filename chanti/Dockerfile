@@ -13,3 +13,5 @@ RUN rm -rf frontend-master static README.md
 RUN mv localhost.conf /etc/nginx/default.d/roboshop.conf
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
+
+#$(docker ps | grep nginx | awk '{print $1}')
