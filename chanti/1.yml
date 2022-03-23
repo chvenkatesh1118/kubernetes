@@ -6,6 +6,3 @@ kind: pod
       containers:
       - name: nginx
         image: nginx
-      env:
-      - name: url
-        value: www.nginx.com
