@@ -1,5 +1,5 @@
 FROM node
-RUN useradd -m -d /app roboshop
+RUN useradd -m -d /app log
 USER roboshop
 WORKDIR /app
 ADD package.json .

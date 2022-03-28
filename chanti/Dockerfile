@@ -11,7 +11,7 @@ RUN  rm -rf *
 RUN  mv frontend-main/* .
 RUN  mv static/* .
 RUN  rm -rf frontend-master static README.md
-RUN  mv localhost.conf /etc/nginx/default.d/roboshop.conf
+RUN  mv localhost.conf /etc/nginx/default.d/log.conf
 EXPOSE 80
 ENTRYPOINT ["/usr/sbin/nginx", "-g", "daemon off;"]
 
