@@ -4,5 +4,5 @@ metadata:
  name: sample2
  spec:
   containers:
-    - name: health
+    name: health
     image: nginx
