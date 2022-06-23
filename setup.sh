@@ -12,4 +12,3 @@ eksctl create cluster --name chanti-cluster  \
 --node-type t2.micro \
 --nodes-min 2 \
 --nodes-max 2 \
---zones <AZ-1>,<AZ-2>
