@@ -13,3 +13,6 @@ eksctl create cluster --name chanti-cluster  \
 --node-type t2.micro \
 --nodes-min 2 \
 --nodes-max 2 \
+
+#kubectl get nodes
+#kubectl run pod tomcat --image=tomcat
