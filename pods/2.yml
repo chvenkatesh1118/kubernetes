@@ -4,8 +4,8 @@ metadata:
  name: my-pod
  labels:
    app: myapp
- spec:
-   containers:
-   - name: myapp-container
-     image: nginx
-     command:   ['sh' , '-c' , 'echo hello chanti && sleep 3000']
+spec:
+  containers:
+  - name: myapp-container
+    image: nginx
+    command:   ['sh' , '-c' , 'echo hello chanti && sleep 3000']
