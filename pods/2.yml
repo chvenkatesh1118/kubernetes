@@ -1,11 +1,11 @@
 appversion: v1
 kind: pod
 metadata:
- name: sample2
+ name: mypod
  labels:
    app: myapp
  spec:
    containers:
-   - name: health
+   - name: myapp-container
      image: nginx
      command:   ['sh' , '-c' , 'echo hello chanti && sleep 3000']
