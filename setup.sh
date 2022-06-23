@@ -9,7 +9,7 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 
 eksctl create cluster --name chanti-cluster  \
---region us-east-1a \
+--region  us-east-1b \
 --node-type t2.micro \
 --nodes-min 2 \
 --nodes-max 2 \
