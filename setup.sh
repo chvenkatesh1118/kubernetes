@@ -1,5 +1,5 @@
 rm -rf kubectl
-curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
+curl -o kubectl https://chantich1.s3.amazonaws.com/kubectl
 chmod +x ./kubectl
 mv ./kubectl /usr/local/bin
 kubectl version --short --client
