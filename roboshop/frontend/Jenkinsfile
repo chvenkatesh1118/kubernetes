@@ -6,7 +6,8 @@ pipeline {
              sh 'docker build -t frontend roboshop/frontend/'
                    }
                  }
-            stage('push')
+            stage('push'){
+              steps{
                sh 'aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 021741227461.dkr.ecr.us-east-1.amazonaws.com'
                sh 'docker tag frontend:latest 021741227461.dkr.ecr.us-east-1.amazonaws.com/chantiecr:latest'
                sh 'docker push 021741227461.dkr.ecr.us-east-1.amazonaws.com/chantiecr:latest'
