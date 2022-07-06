@@ -11,5 +11,5 @@ RUN unzip /tmp/main.zip -d /tmp/
 
 WORKDIR /tmp/frontend-main/
 RUN mv  static/ /usr/share/nginx/html/
-expose 80
-CMD [ "service","nginx","start"]
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
