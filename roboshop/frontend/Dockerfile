@@ -8,5 +8,5 @@ RUN unzip /tmp/main.zip
 FROM nginx
 RUN rm -rf  /usr/share/nginx/html/*
 WORKDIR /tmp/
-RUN mv /tmp/frontend-main /static/* /usr/share/nginx/html/
+RUN mv frontend-main /static/* /usr/share/nginx/html/
 CMD ["start","nginx"]
