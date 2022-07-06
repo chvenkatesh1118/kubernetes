@@ -10,5 +10,5 @@ ADD https://github.com/roboshop-devops-project/frontend/archive/refs/heads/main.
 RUN unzip /tmp/main.zip -d /tmp/
 
 WORKDIR /tmp
-RUN mv frontend-main /static/* /usr/share/nginx/html/
+RUN mv frontend-main /static/ /usr/share/nginx/html/
 CMD ["start","nginx"]
