@@ -1,5 +1,6 @@
 FROM centos:7
 RUN yum update -y
+RUN yum install git -y
 FROM nginx
 RUN rm -rf  /usr/share/nginx/html/*
 ADD https://github.com/roboshop-devops-project/frontend.git /tmp/
