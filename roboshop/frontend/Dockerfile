@@ -11,4 +11,4 @@ RUN unzip /tmp/main.zip -d /tmp/
 
 WORKDIR /tmp/frontend-main/
 RUN mv  static/ /usr/share/nginx/html/
-CMD [ "systemctl","nginx","start"]
+CMD [ "service","nginx","start"]
