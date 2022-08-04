@@ -9,10 +9,10 @@ spec:
   - name: nginx
     image: nginx
     command: ['sh', '-c', "echo $(MY_VAR)"]
-env:
--  name: MY_VAR
-   valurFrom:
-     configMapKeyRef:
-       name: ConfigMap
-       key: myValue
+    env:
+    - name: MY_VAR
+      valurFrom:
+      configMapKeyRef:
+        name: ConfigMap
+        key: myValue
 
