@@ -13,6 +13,6 @@ spec:
     - name: MY_VAR
       valurFrom:
       configMapKeyRef:
-        name: ConfigMap
+        name: myconfig
         key: myValue
 
