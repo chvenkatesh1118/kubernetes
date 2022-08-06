@@ -5,8 +5,8 @@ metadata:
 spec:
   containers:
   - name: app
-    image: chvenkatesh/chanti:latest
+    image: nginx
 #     ports:
-#     - containerPort:80
+#     - containerPort:80chvenkatesh/chanti:latest
 
 
