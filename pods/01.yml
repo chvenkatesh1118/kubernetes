@@ -6,7 +6,7 @@ spec:
   containers:
   - name: app
     image: chvenkatesh/chanti:latest
-    ports:
-    - containerPort:80
+#     ports:
+#     - containerPort:80
 
 
