@@ -1,18 +1,12 @@
 apiversion: v1
-kind: pod
+kind: deployment
 metadata:
-  name: nginxpod
+  name: app
 spec:
   containers:
-  - name: nginx
-    image: nginx
+  - name: app
+    image: chvenkatesh/chanti:latest
+    containerPort:
+      -  port:80
 
----
-apiversion: v1
-kind: pod
-metadata:
-  name: httpdpod
-spec:
-  containers:
-  - name: httpd
-   image: httpd
+
