@@ -1,5 +1,5 @@
 appversion: v1
-kind: pod
+kind: deploy
     metadata:
       name: chanti
     spec:
