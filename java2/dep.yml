@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: java2
+  labels:
+    app: java2
+spec:
+  containers:
+    name: java2
+    image: public.ecr.aws/d3v4j0e2/chantiecr:latest
+  type: LoadBalancer
+  ports:
+   - containerPort: 8080
+     targetPort: 8080
+     port: 8080
