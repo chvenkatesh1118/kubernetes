@@ -8,8 +8,8 @@ spec:
       app: java2
   type: LoadBalancer
   ports:
-    targetPort: 8080
-    containerPort: 8080
+  - containerPort: 8080
     nodePort: 8080
+    targetPort: 8080
 
 
