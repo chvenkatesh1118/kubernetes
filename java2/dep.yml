@@ -1,23 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: java2
-  labels:
-    app: java2
-spec:
-  replicas: 2
-  selectors:
-    matchLabels:
-      app: java2
-  templates:
-    spec:
-      metadata:
-        labels:
-          app: java2
-      containers:
-      - name: java2
-        image: public.ecr.aws/d3v4j0e2/chantiecr:latest
-        ports:
-        - containerPort: 8080
-          targetPort: 8080
-          port: 8080
+
+
+
+
+
